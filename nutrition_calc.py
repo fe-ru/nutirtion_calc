@@ -23,8 +23,7 @@ cx = os.environ.get("CX")
 
 
 # エクセルファイルの読み込み
-df = pd.read_excel("/Users/bocmitsuhashi/Desktop/fixed_application/nutirtion_calc_on_excel/calcsheet.xlsx",engine='openpyxl')  # change to your excel file path
-
+df = pd.read_excel("/Users/bocmitsuhashi/Desktop/fixed_application/nutirtion_calc_on_excel/calcsheet.xlsx",engine='openpyxl') 
 def get_nutritional_info(food_items, selected_elements, api_key, cx):
     chrome_options = Options()
     chrome_options.add_argument("--headless")
